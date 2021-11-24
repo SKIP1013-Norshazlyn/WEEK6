@@ -1,0 +1,60 @@
+package exercise;
+import java.util.Scanner;
+public class Exercise3 {
+
+	public static void main(String[] args) 
+	{
+		Scanner in =  new Scanner(System.in);
+		
+		String a,b;
+		double m1, m2;
+		double avg;
+		
+		System.out.print("Enter subject: ");
+		a = in.next();
+		System.out.print("Enter your marks: ");
+		m1 = in.nextDouble();
+		
+		System.out.print("Enter subject: ");
+		b = in.next();
+		System.out.print("Enter your marks: ");
+		m2 = in.nextDouble();
+		
+		avg = (m1 + m2)/2;
+		
+		if (m1 > m2)
+			System.out.println("Subject " +a+" " +m1);
+		else
+			System.out.println("Subject " +b+ " "+m2);
+		
+		
+
+		if (m1 > 50)
+			System.out.println(a +" PASS");
+		else
+			System.out.println(a +" FAIL");
+		
+		
+		
+		if (m2 > 50)
+			System.out.println(b +" PASS");
+		else
+			System.out.println(b +" FAIL");
+		
+		
+		
+		if ((avg >= 80) && (avg <= 100))
+			System.out.println("Grade A");
+		else if((avg >= 60) && (avg <= 79))
+			System.out.println("Grade B");
+		else if((avg >= 50) && (avg <= 59))
+			System.out.println("Grade C");
+		else
+			System.out.println("FAIL");
+		
+		
+		
+		
+	}
+
+}
