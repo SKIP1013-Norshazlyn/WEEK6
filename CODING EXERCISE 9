@@ -1,0 +1,41 @@
+package exercise;
+import java.util.Scanner;
+public class Exercise9 {
+
+	public static void main(String[] args) 
+	{
+		int marks;
+		
+		Scanner in = new Scanner(System.in);
+		
+		System.out.print("Enter percentage marks: ");
+		marks =in.nextInt();
+		
+		switch(marks/10)
+		{
+		case 9:
+			System.out.println("Excellent: Grade A");
+			break;
+		case 8:
+			System.out.println("Very Good: Grade B");
+			break;
+		case 7:
+			System.out.println("Good: Grade C");
+			break;
+		case 6:
+			System.out.println("Good: Grade D");
+			break;
+		case 5:
+			System.out.println("Very Good: Grade E");
+			break;
+		case 4:
+			System.out.println("Passed: Grade F");
+			break;
+		default:
+			System.out.println("Failed!");
+		
+		}
+
+	}
+
+}
