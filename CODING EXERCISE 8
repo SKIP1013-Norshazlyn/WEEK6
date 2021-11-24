@@ -1,0 +1,30 @@
+package exercise;
+import java.util.Scanner;
+public class Exercise8 {
+
+	public static void main(String[] args) 
+	{
+		int marks;
+		
+		Scanner in = new Scanner(System.in);
+		
+		System.out.print("Enter percentage marks: ");
+		marks =in.nextInt();
+		
+		if( marks >= 90)
+			System.out.println("Excellent: Grade A");
+		else if ((marks < 90) && (marks >= 80))
+			System.out.println("Very Good: Grade B");
+		else if ((marks < 80) && (marks >= 70))
+			System.out.println("Good: Grade C");
+		else if ((marks < 70) && (marks >= 60))
+			System.out.println("Good: Grade D");
+		else if ((marks < 60) && (marks >= 50))
+			System.out.println("Good: Grade E");
+		else if ((marks <=50) && (marks >= 40))
+			System.out.println("Passed: Grade F");
+		else
+			System.out.println("Failed!");
+	}
+
+}
